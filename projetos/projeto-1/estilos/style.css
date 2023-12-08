@@ -12,8 +12,9 @@ body{
     height: 100%;
 }
 header{
-    background-image: url(../imagens/bg-1.jpg);
+    background-image: url(../imagens/bg-3.jpg);
     background-size: cover;
+    background-position: center right;
     height: 400px;
     background-repeat: no-repeat;
     
@@ -28,13 +29,17 @@ nav > a{
     background-color: rgba(0, 0, 0, 0.479);
     padding: 10px;
     border: 1px solid white;
+    text-transform: uppercase;
+    font-size: .7em;
+    letter-spacing: 2px;
 }
 nav > a:hover{
 background-color: black;
 }
 section.tema{
-    background: transparent;
-    margin: 80px;    
+    display: block;
+    margin: auto;
+    background: transparent; 
 }
 header >  section.tema > h1, header> section.tema > p{
     text-align: center;
@@ -42,13 +47,15 @@ header >  section.tema > h1, header> section.tema > p{
 }
 header> section.tema > h1{    
     text-shadow: 0px 0px 5px black;
+    text-transform: uppercase;
+    font-size: 50px;
 }
 header> section.tema > p{
     margin: auto;
+    width: fit-content;
     margin-top: 30px;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.479);
-    width: 340px;  
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.479);  
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.486);
     border-bottom: 1px solid white; 
 }
@@ -64,9 +71,10 @@ section{
     padding: 20px;
 }
 section> article > h2, section > article > a{
-    background-color: rgba(128, 128, 128, 0.438);
+    background-color: rgba(172, 171, 171, 0.541);
     padding: 5px;
     margin-bottom: 10px;
+    border: 2px solid rgba(117, 117, 117, 0.596);
 }
 section > article > a{
     display: block;
