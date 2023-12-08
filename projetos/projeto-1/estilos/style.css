@@ -32,15 +32,18 @@ nav > a{
 nav > a:hover{
 background-color: black;
 }
-header > h1, header > p{
+section.tema{
+    background: transparent;
+    margin: 80px;    
+}
+header >  section.tema > h1, header> section.tema > p{
     text-align: center;
     color: white;
 }
-header > h1{
-    margin-top: 150px;
+header> section.tema > h1{    
     text-shadow: 0px 0px 5px black;
 }
-header > p{
+header> section.tema > p{
     margin: auto;
     margin-top: 30px;
     padding: 5px;
