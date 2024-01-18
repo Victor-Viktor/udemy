@@ -16,8 +16,36 @@ h1{
     font-size: 4.8rem;
 }
 
+h2{
+    font-size: 4rem;
+    margin: 4rem 0;
+}
+
+h3{
+    font-size: 3.2rem;
+    margin: 3.2rem 0;
+}
+
 .upper{
     text-transform: uppercase;
+}
+
+.btn{
+    display: inline-block;
+    background-color: var(--primar-color);
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1.8rem;
+    padding: 1.6rem 4rem;
+     color: black;
+}
+
+.section_title{
+    text-align: center;
+}
+
+.section_btn{
+    margin: 4.5rem;
 }
 
 nav a{
@@ -67,5 +95,66 @@ background-color: black;
 }
 .heroBanner{
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    gap: 20rem;
+}
+.hero-title{
+    margin-bottom: 4rem;
+}
+
+.cursos{
+    text-align: center;
+}
+.cursosContainer{
+    display: flex;
+    text-align: left;
+    gap: 2rem;
+}
+.curso_card{
+    
+    flex: 1;
+}
+.curso_card img{
+    display: block;
+    width: 100%;
+}
+.curso_card h3{
+    font-size: 2.4rem;
+}
+.curso_card p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+.cursos_card_content{
+    padding: 1rem;
+    border-radius: 0 0 8px 8px;
+    border: 1px solid #ccc;
+    border-top: transparent;
+    height: 24rem;
+}
+
+.escola{
+    display: flex;
+    gap: 7rem;
+    padding-top: 6rem;
+}
+.escola_title{
+    font-size: 3.2rem;
+    margin-top: 6rem;
+}
+.escola p{
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+.page_address{
+    margin: 2rem 0;
+    text-align: right;
+    font-size: 1.8rem;
+}
+
+.footer{
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 1.3rem;
 }
