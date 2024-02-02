@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gridContainer{
+            width: 96vw;
+            height: 96vw;
+        }
+        .gridItems{
+            background-color: orange;
+            padding: 20px;
+        }
+
+        /* Grid */
+        .gridContainer{
+            display: grid;
+
+            grid-template-columns: [col1-start] 1fr [col1-end col2-star] 1fr [col2-end col3-start] 1fr [col3-end];
+
+            grid-template-rows: [header-start] 75px [header-end nav-start] 50px [nav-end main-start] 1fr [main-end footer-start] 50px [footer-end];
+            gap: 1em;
+        }
+
+        .header{
+            grid-column: col1-start / col3-end;
+            grid-row: header-start / header-end;
+        }
+
+        .nav{
+            grid-column: col1-start / col3-start;
+            grid-row: 2 / 3;
+        }
+        .aside{
+            grid-column: col3-start / col3-end;
+            grid-row: header-end / footer-end;
+            z-index: 1;
+        }
+        .main{
+            grid-column: col1-start / col3-start;
+            grid-row: main-start / main-end;
+        }
+        .footer{
+            grid-column: col1-start / col3-end;
+            grid-row: footer-start / footer-end;
+            background-color: rgba(55, 109, 156, 0.295);
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="gridContainer">
+        <div class="header gridItems">Header</div>
+        <div class="nav gridItems">Nav</div>
+        <div class="aside gridItems">Aside</div>
+        <div class=" main gridItems">
+            main
+        </div>
+        <div class=" footer gridItems">Footer</div>
+    </div>
+</body>
+</html>
