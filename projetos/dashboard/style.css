@@ -19,7 +19,6 @@ body{
     grid-template-columns: 240px 1fr;
     grid-template-rows: 64px auto;
     height: 100%;
-    gap: 16px;
 }
 
 .gridItem{
@@ -38,6 +37,8 @@ body{
 }
 
 .main{
+    margin-top: 16px;
+    margin-left: 16px;
     grid-column: 2 / -1;
     grid-row: 2 / -1;
 }
