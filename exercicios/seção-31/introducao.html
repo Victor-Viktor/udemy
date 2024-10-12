@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays e objetos</title>
+    <style>
+        body{
+            font: normal 12pt arial;
+        }
+    </style>
+</head>
+<body>
+    <ul id="lista">
+
+    </ul>
+
+    <script>
+        
+        let list = document.querySelector('#lista')
+        let pessoas = [
+            {nome: 'Victor', email: 'VictorVictor@happy.com'},
+            {nome: 'Douglas', email: 'DouglasDouglas@happy.com'},
+            {nome: 'Ivanir', email: 'IvanirIvanir@happy.com'},
+            {nome: 'Manoel',email: 'ManoelManoel@happy.com'},
+            {nome: 'Daniel', email: 'DanielDaniel@happy.com'},
+        ]
+        for(c = 0;c < pessoas.length;c++){
+            let item = document.createElement('li')
+            item.innerHTML = `<strong>Nome: </strong>${pessoas[c].nome} <strong>E-mail:</strong> ${pessoas[c].email}`
+            list.appendChild(item)
+        }
+        
+        
+        console.log(pessoas)
+    </script>
+</body>
+</html>

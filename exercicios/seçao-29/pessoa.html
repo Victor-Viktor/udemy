@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    <h1>objetos</h1>
+
+    <script>
+        let nome = 'João'
+        const endereco = {
+            logradouro: 'Rua da Tulias',
+            numero: 200
+        }
+
+        const pessoa = {
+            nome, // se a propriedade e o valor tem o msmo nome, pode-se omitir o que vem depois do ":" Ex: Nome: nome => nome
+            sobrenome: 'Fagundes',
+            endereco
+        }
+
+        document.write(pessoa.endereco.logradouro)
+        
+        for(let prop in pessoa){
+            console.log(prop)
+            console.log(pessoa[prop])
+
+            //para cada iteração do loop a variavel prop adiquire a propriedade dentro de si Ex:
+            //primeiro loop a variavel prop recebe 'nome'
+            //na segunda recebe 'sobrenome'
+            //e na terceira recebe endereco
+
+            //usando pesoa[prop] seria o mesmo que usar pessoa['nome'] ou pessoa[sobrenome] ou pessoa[endereco] dependendo de que iteração estamos falando
+        }
+    </script>
+</body>
+</html>
