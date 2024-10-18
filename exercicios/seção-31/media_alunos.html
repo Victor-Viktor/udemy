@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="display">
+
+    </div>
+
+    <script>
+        const alunos = [
+            {nome: 'victor', notas:[1,3,3,8]},
+            {nome: 'Douglas', notas:[10,6,3,2]}
+        ]
+        let HTML = document.getElementById('display')
+        let htmlText = ''
+
+        for(let c = 0;c < alunos.length;c++){
+            htmlText += `<ul>`
+            htmlText += `<li>nome do aluno: ${alunos[c].nome}</li>`
+            for(let j = 0;j < alunos[c].notas.length;j++){
+                htmlText += `<li>nota ${j+1}: ${alunos[c].notas[j]}</li>`
+            }
+            htmlText += `</ul>`
+        }
+        console.log(htmlText)
+
+        HTML.innerHTML = htmlText
+    </script>
+</body>
+</html>

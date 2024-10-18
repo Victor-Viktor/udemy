@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        tr, td, th{
+            border: 1px solid black;
+            padding: 0 8px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead id="cabeca">
+            <tr>
+                <th>Produtos</th>
+                <th>Preço</th>
+                <th>Quantidade em estoque</th>
+            </tr>
+        </thead>
+        <tbody id="tabela">
+
+        </tbody>
+    </table>
+    <script>
+        const produtos = [
+            {nome: 'Caneta', preco: 2,quantidade: 10},
+            {nome: 'Lápis', preco: 1.50,quantidade: 8},
+            {nome: 'Borracha', preco: 1,quantidade: 3}
+        ]
+        let tab = document.querySelector('#tabela')
+        
+        
+        for(c = 0; c < produtos.length;c++){
+            let novoItem = document.createElement('tr')
+            let novoProduto = document.createElement('td')
+            let novoPreco = document.createElement('td')
+            let novoQuantidade = document.createElement('td')
+
+            tab.appendChild(novoItem)
+
+            novoProduto.innerHTML = `${produtos[c].nome}`
+            novoPreco.innerHTML = `R$${produtos[c].preco}`
+            novoQuantidade.innerHTML = `${produtos[c].quantidade}`
+
+            novoItem.appendChild(novoProduto)
+            novoItem.appendChild(novoPreco)
+            novoItem.appendChild(novoQuantidade)
+            
+        }
+
+    </script>
+</body>
+</html>
