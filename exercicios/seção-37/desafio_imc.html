@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+    <h1 id="res">imc</h1>
+    <script src="desafio_imc.js"></script>
+    <script>
+        try{
+            document.querySelector('#res').innerHTML = calculaImc(104, 1.72)
+        }catch(Error){
+            alert('Deu ruim ' + Error.message)
+        }
+    </script>
+</body>
+</html>

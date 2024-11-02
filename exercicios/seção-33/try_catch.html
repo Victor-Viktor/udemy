@@ -13,12 +13,25 @@
         //obj = null
 
         try {
-            document.getElementById('output').innerHTML = `Nome: ${obj.nome} - Email: ${obj.email}`         
+            document.getElementById('output').innerHTML = `Nome: ${obj.nome} - Email: ${obj.email}<br>`         
         }catch(e){
             alert('Deu Ruim !!!!!  ' + e.message)
         }finally{
             alert('Fim do programa')
         }        
+    </script>
+    <script src="areas.js"></script>
+    <script>
+        try{
+            calcularAreaTriangulo(5, 3)
+        }catch(e){
+            alert('Deu ruim!!! ' + e.message)
+        }
+        try{
+            document.getElementById('output').innerHTML += calcularAreaCirculo(7)
+        }catch(e){
+            alert('Deu ruim!!! '+ e.message)
+        }
     </script>
 </body>
 </html>
